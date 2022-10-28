@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Justin Lacoste</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="mobile-warning">
+	<p>I have not adapted my website for mobile devices yet, so please use a desktop to view it!</p>
+</div>
+
+<div class="body-div">
+
+	<div class="navigationBarDesktop">
+		<div style="display: flex;">
+			<div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="400" class="resume-button-div-topbar">
+				<div class="resume-button-topbar" onclick="openCV()">
+					<p class="resume-button-text-topbar">CV</p>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row; justify-content: space-between;">
+			<p data-aos="fade-down" data-aos-delay="1200" data-aos-duration="400" class="navigationName" onclick="goTo('/#projects')" id="projectsButton">Projects</p>
+			<p data-aos="fade-down" data-aos-delay="1400" data-aos-duration="400" class="navigationName" onclick="goTo('/#education')" id="educationButton">Education</p>
+			<p data-aos="fade-down" data-aos-delay="1600" data-aos-duration="400" class="navigationName" onclick="goTo('/#experience')" id="experienceButton">Experience</p>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- FIRST PAGE - INTRODUCTION -->
+	<div class="page1">
+		<p data-aos="fade-up" data-aos-delay="1800" data-aos-duration="400" class="green-text description">Hey there! My name is</p>
+		<p data-aos="fade-up" data-aos-delay="2000" data-aos-duration="400" class="green-text title">Justin Lacoste</p>
+		<p data-aos="fade-up" data-aos-delay="2200" data-aos-duration="400" class="sub-title">I’m a student from Montreal in Computer Science and Statistics at McGill. For the past few years, I’ve been exploring and learning about various elements in software, from web development and mobile applications to data science and machine learning. I now spend most of my time on applications integrating statistics and ML models.
+		</p>
+		<div data-aos="fade-up" data-aos-delay="2400" data-aos-duration="400" class="resume-button-div">
+			<div class="resume-button" onclick="openCV()">
+				<p class="resume-button-text">Resumé</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- SECOND PAGE - MY TECH STACK -->
+	<div class="page2">
+		<p data-aos="fade-up" class="sectionTitle tech-stack-title" style="margin-top: 30px">My Tech Stack</p>
+
+		<div style="display: flex; flex-direction: row; justify-content: space-around;">
+			<div class="tech-stack-title-description-div">
+				<p data-aos="fade-up" class="sectionTitle tech-stack-single-title" style="font-size: 30px;">Web App</p>
+				<p data-aos="fade-up" class="tech-stack-description">
+					I built several web apps using React and mobile apps using React Native. For the backend, I’ve built REST API using Node.js and PHP, used Relational databases and NoSQL databases, wrote SQL script to interact with the DBs and have integrated into my applications AWS services such as S3 and Lambda.
+				</p>
+			</div>
+			<span class="content span"></span>
+		</div>
+
+
+		<div style="display: flex; flex-direction: row; justify-content: space-around;">
+			<span class="content_two span" id="span_2"></span>
+			<div class="tech-stack-title-description-div">
+				<p data-aos="fade-up" class="sectionTitle tech-stack-single-title" style="font-size: 30px;">Statistics</p>
+				<p data-aos="fade-up" class="tech-stack-description">
+					I got into modeling and data science after a Mathematical Modeling class at Harvard Summer 
+					School. I went on to take a Machine Learning class and a Deep Learning Specialization class on Coursera to improve my skills where I learned about data preparation, feature engineering and fine-tuning, and learned to use tools like Numpy, Matplotlib and Keras. I’ve also gained experience with R in my Statistics classes.
+
+
+				</p>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row; justify-content: space-around;">
+			<div class="tech-stack-title-description-div">
+				<p data-aos="fade-up" class="sectionTitle tech-stack-single-title" style="font-size: 30px;">Machine Learning</p>
+				<p data-aos="fade-up" class="tech-stack-description">
+					I learned these languages in school, such as Java for my Algorithms and Data Structure class and C for my Software Systems class. I've used them for a variety of assignments, from simple challenges to complex algorithm problems, often for object-oriented programming and functional programming.
+				</p>
+			</div>
+			<span class="content_three span" id="span"></span>
+		</div>
+	</div>
+
+	<!-- THIRD PAGE - INTERNSHIP -->
+	<div class="page3">
+		<p data-aos="fade-up" class="sectionTitle tech-stack-title" id="experience" style="margin-top: 60px">Experience</p>
+
+		<!-- PYANO -->
+		<div class="internship-div">
+			<div data-aos="fade-up" style="display: flex; flex-direction: row; justify-content: flex-start;">
+				<p class="role-title">Backend Developer/Co-Founder</p>
+				<a style="text-decoration: none;"><p class=company-name>&nbsp @ Pyano</p></a>
+			</div>
+			<p data-aos="fade-up" class="internship-date">Summer 2022</p>
+
+			<div class="educationCard">
+				<div class="jobDescriptionDiv">
+					<div class="intern-description-div" data-aos="fade-right">
+						<p class="intern-description-arrow">▶</p>
+						<p class="intern-description">Built a pipeline of algorithms that listens to the user's piano performance, extracts the relevant features, compares them to the performances of professionals and gives the user feedback on what he could improve regarding his tempo and intensity (like a teacher would!).</p>
+					</div>
+					<br>
+					<div class="intern-description-div" data-aos="fade-right">
+						<p class="intern-description-arrow">▶</p>
+						<p class="intern-description">Created a REST API with Node.js for user authentication and information logging and retrieving to serve the application. Deployed it on a Linux machine.</p>
+					</div>
+					<br>
+					<div class="intern-description-div" data-aos="fade-right">
+						<p class="intern-description-arrow">▶</p>
+						<p class="intern-description">Wrote the script to interact with our database (DynamoDB) for user authentification and getting/updating data.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- TEAMEO -->
+		<div class="internship-div">
+			<div data-aos="fade-up" style="display: flex; flex-direction: row; justify-content: flex-start;">
+				<p class="role-title">Software Developer </p>
+				<a href="https://teameo.io" style="text-decoration: none;"><p class=company-name>&nbsp @ Teameo</p></a>
+			</div>
+			<p data-aos="fade-up" class="internship-date">Summer 2021</p>
+
+			<div class="educationCard">
+				<div class="jobDescriptionDiv">
+					<div class="intern-description-div" data-aos="fade-right">
+						<p class="intern-description-arrow">▶</p>
+						<p class="intern-description">Led the development of the reverse proxy with C# using .NET Core, which allowed us to mirror any webpage in an iframe on our Teams application and meet the demands of a dozen schools</p>
+					</div>
+					<br>
+					<div class="intern-description-div" data-aos="fade-right">
+						<p class="intern-description-arrow">▶</p>
+						<p class="intern-description">Implemented the designs from the Marketing Team on our website using React and Typescript to improve our landing pages and the portal for school administrators and teachers</p>
+					</div>
+					<br>
+					<div class="intern-description-div" data-aos="fade-right">
+						<p class="intern-description-arrow">▶</p>
+						<p class="intern-description">Worked with customers to analyze their needs and implemented changes when necessary</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<!-- TEST FOURTH PAGE - PROJECTS -->
+	<div class="page4">
+
+		<p data-aos="fade-up" class="sectionTitle tech-stack-title" id="projects" style="margin-top: 60px">Projects</p>
+
+		<div style="display: flex; flex-direction: row; justify-content: space-around; display: unset">
+			<div style="position: sticky; position: -webkit-sticky; top: 15vh; left: 2vw; margin-bottom: 15vh; display: flex; flex-direction: column; width: 50vw; justify-content: space-between; height: 80vh">
+				<div style="display: flex; flex-direction: column;">
+					<div style="display: flex;">
+						<p id="project-name" class="to-be-animated" style="color: white; padding: 5px 20px"></p>
+					</div>
+					<div style="display: flex">
+						<p id="project-description" class="to-be-animated"></p>
+					</div>
+					<div style="display: flex">
+						<div id="go-to-project-button-div" class="to-be-animated">
+							<div id="go-to-project-button">
+					  		<p id="go-to-project-text"></p>
+					  	</div>
+				  	</div>
+				  </div>
+				</div>
+			  <div style="display: flex">
+					<p id="project-type" class="to-be-animated" style="padding: 5px 20px;"></p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div style="height: 130vh; display: flex; justify-content: space-around;">
+			<div style="flex: 1; height: 130vh; flex-direction: column; justify-content: center">
+				<p id="inViewport-1"></p>
+			</div>
+			<div  style="flex: 0.75; align-items: center; height: 130vh; position: relative">
+			  <div class="card parallax" data-speed="-.2" style="flex: 1; position: absolute; z-index: 3; right: 25vw">
+			  	<img style="width: 25vw; height: auto;" src="./assets/project1/phone5.png">
+			  </div>
+			  <div class="card" style="flex: 1;position: absolute; z-index: 2; right: 1vw; margin-top: 10vh">
+			    <img style="width: 25vw; height: auto" src="./assets/project1/phone4.png">
+			  </div>
+			  <div class="card parallax" data-speed="-.2" style="flex: 1; position: absolute; z-index: 4; right: 12vw; margin-top: 40vh">
+			  	<img style="width: 25vw; height: auto;" src="./assets/project1/phone3.png">
+			  </div>
+			</div>
+		</div>
+
+		<div style="height: 130vh; display: flex; justify-content: space-around;">
+			<div style="flex: 1; height: 130vh; flex-direction: column; justify-content: center">
+				<p id="inViewport-2"></p>
+			</div>
+			<div style="flex: 0.75; align-items: center; height: 130vh; position: relative">
+			  <div class="card parallax" data-speed="-.2" style="flex: 1; position: absolute; z-index: 3; right: 20vw">
+			  	<img style="width: 35vw; height: auto;" src="./assets/project2/ipad1.png">
+			  </div>
+			  <div class="card" style="flex: 1;position: absolute; z-index: 2; right: 1vw; margin-top: 10vh">
+			    <img style="width: 50vw; height: auto" src="./assets/project2/mac1.png">
+			  </div>
+			</div>
+		</div>
+	
+
+	</div>
+
+
+	<!-- FIFTH PAGE - EDUCATION AND AWARDS	 -->
+	<div class="page5">
+		<p data-aos="fade-up" class="sectionTitle tech-stack-title" id="education" style="margin-top: 40px; margin-bottom: 20px;">Education and Awards</p>
+
+		<div data-aos="fade-up" class="educationDiv">
+			<div class="educationCard">
+				<p class="educationSchoolText">McGill University</p>
+				<p class="educationDateText">August 2021 - May 2024</p>
+				<p class="educationDiplomaText">Honors Computer Science and Minor Statistics</p>
+				<p class="educationGrade">3.91 GPA</p>
+			</div>
+
+			<div data-aos="fade-up" class="educationCard">
+				<p class="educationSchoolText">Collège Jean-de-Brébeuf</p>
+				<p class="educationDateText">August 2019 - June 2021</p>
+				<p class="educationDiplomaText">CEGEP Pure and Applied Science Diploma</p>
+				<p class="educationGrade">92% average</p>
+			</div>
+		</div>
+
+		<div class="awards-div">
+			<div data-aos="fade-right" class="award-single-div">
+				<p class="award-description-arrow">●</p>
+				<div>
+					<p class="award-name">3rd Best Project - MariHacks</p>
+					<p class="award-description">Won 3rd place at Montreal's biggest High School Hackathon for building a two-sided marketplace connecting users with broken items to repairers</p>
+				</div>
+			</div>
+			<div data-aos="fade-right" class="award-single-div">
+				<p class="award-description-arrow">●</p>
+				<div>
+					<p class="award-name">Best Delegate Scholarship - ModelUN</p>
+					<p class="award-description">Won a scholarship at Brebeuf for my performance and leadership at the school's ModelUN conference</p>
+				</div>
+			</div>
+			<div data-aos="fade-right" class="award-single-div">
+				<p class="award-description-arrow">●</p>
+				<div>
+					<p class="award-name">Brebeuf Distinction (x5)</p>
+					<p class="award-description">Won the Brebeuf Distinction every year at my school for academic performance and volunteering</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- SIXTH PAGE - More about me -->
+	<div class="page6">
+		<p data-aos="fade-up" class="sectionTitle" style="margin-top: 30px">More about me</p>
+
+		<div class="educationCard">
+			<div data-aos="fade-up" class="more-about-me-text">
+				<p>Sometimes, I do other things than coding! I love to play tennis and go jogging outside to stay fit. I also love playing piano in my free time (and test our app at the same time!).</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footerDesktop">
+		<p class="footerItem">Email: justinmlacoste@gmail.com</p>
+		<p class="footerItem" style="color: 'white">Phone: (514) 867-0078</p>
+	</div>
+</div>
+
+	<script src="index.js"></script>
+	<script>
+	  window.addEventListener('load', function() { AOS.init(); });
+	</script>
+
+	<script type="text/javascript">
+		function openCV() {
+		     window.open('cv.pdf');
+		}
+		function goTo(path) {
+			window.location.href = path
+		}
+		function goToAutonotes() {
+     		//window.location.href = "http://justinmlacoste.com/autonotes"
+     		url = "https://github.com/Justin-Lacoste/Autonotes"
+     		window.open(url, '_blank').focus();
+		}
+	</script>
+
+</body>
+</html>
+
+		<!-- OG versions of sliders (words, not images)
+		<div style="height: 100vh; display: flex; justify-content: space-around;">
+			<div>
+			</div>
+			<div>
+			  <div class="card parallax" data-speed="-.2">
+			    <h2 id="inViewport-3">5</h2>
+			  </div>
+			  <div class="card">
+			    <h2>6</h2>
+			  </div>
+			</div>
+		</div>
+	-->
+
+		<!-- previous try for sliding images
+		<div style="height: 100vh; display: flex; justify-content: space-around;">
+			<div style="flex: 1.25; height: 100vh">
+			</div>
+			<div style="display: flex; flex: 0.75; flex-direction: column; align-items: center; height: 100vh">
+			  <div class="card parallax" data-speed="-.2" style="flex: 1; margin-right: 5vw">
+			  	<img id="inViewport-2" style="width: 15vw; height: 30vw; flex-grow: 1;" src="./assets/image_1.png">
+			  </div>
+			  <div class="card" style="flex: 1; margin-right: 1vw;">
+			    <img style="width: 15vw; height: 30vw;" src="./assets/image_2.png">
+			  </div>
+			</div>
+		</div>
+	-->
