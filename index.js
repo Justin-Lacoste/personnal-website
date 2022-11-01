@@ -112,7 +112,7 @@ $(document).ready(function(){
                     $('#project-type').text(projects.project2.type);
                     $(".to-be-animated").addClass('project-name-animated');
                     $("#go-to-project-button").unbind("click");
-                    $("#go-to-project-button").click(goToPredictor)
+                    $("#go-to-project-button").click(goToCoinOracle)
                 }, 50);
                 window.setTimeout(function() {
                     $('.to-be-animated').css('color', 'white')
@@ -147,13 +147,11 @@ projects =
 
 
 
-
-
 const myTags = [
-    'JavaScript', 'CSS', 'HTML',
-    '.NET Core', 'Node.js', 'PHP',
+    'JavaScript', 'HTML/CSS', 'React',
+    '.NET', 'Node.js', 'PHP',
     'React', 'React Native', 'SQL',
-    'NoSQL', 'AWS', 'GIT'
+    'NoSQL', 'AWS', 'Java'
 ];
 var tagCloud = TagCloud('.content', myTags,{
   radius: 200,
@@ -172,7 +170,7 @@ document.querySelector('.content').style.fontSize = '25px';
 
 
 const myTagsTwo = [
-    'SQL', 'R', 'Keras', 'Numpy', 'Matplotlib', 'Machine Learning', 'Pandas', 'Python'
+    'SQL', 'Keras', 'Tensorflow', 'Machine Learning', 'Mathematical Modelling'
 ];
 var tagCloud = TagCloud('.content_two', myTagsTwo,{
   radius: 200,
@@ -191,7 +189,7 @@ document.querySelector('.content_two').style.fontSize = '25px';
 
 
 const myTagsThree = [
-    'Java', 'Python', 'C#', 'C', 'Bash', 'OCaml'
+    'R', 'Python', 'Matplotlib', 'Pandas', 'Numpy'
 ];
 var tagCloud = TagCloud('.content_three', myTagsThree,{
   radius: 200,
